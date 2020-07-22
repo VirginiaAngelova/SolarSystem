@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: radial-gradient(#555,#000);
+    width: 100%;
+    min-height: 500px;
+
+}
+.stars{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(185, 208, 216);
+    border-radius: 50%;
+    transform: rotateX(90deg);
+    box-shadow: 0 0 100px rgb(237, 240, 241);
+    animation: stars-pulse 2s infinite alternate;
+    z-index: -1;
+
+}
+#star-1{
+   margin-top: 70px;
+    margin-left: 30%;
+}
+#star-2{
+    margin-top: 400px;
+    margin-left: 20%;
+}
+#star-3{
+    margin-top: 300px;
+    margin-left: 80%;
+}
+#star-4{
+    margin-top: 400px;
+    margin-left: 500%;
+}
+#star-5{
+    margin-top: 10px;
+    margin-left: 50%;
+}
+#star-6{
+    margin-top: 20px;
+    margin-left: 20%;
+}
+#star-7{
+    margin-top: -700px;
+    margin-left: 90%;
+}
+#star-7{
+    margin-top: -1200px;
+    margin-left: 70%;
+}
+.planets{
+    position: relative;
+    transform-style:preserve-3d;
+    transform:rotateX(75deg);
+    width: 100%;
+    height: 100vh;
+    
+}
+#sun{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index:1;
+    transform: rotateX(90deg);
+}
+.mercury-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 42%;
+    margin-top: 0px;
+    margin-left:0px;
+    border-radius: 50%;
+    z-index: 2;
+
+    transform-style: preserve-3d;
+    animation:spin 2s linear infinite;
+   
+}
+.mercury{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: 0px;
+    
+    animation:spin-planets 2s linear infinite;
+    transform:rotateX(90deg);
+}
+.venus-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 400px;
+    height: 400px;
+    top: 40%;
+    left: 38%;
+    margin-top: -0px;
+    margin-left:-0px;
+    border-radius: 50%;
+    z-index: 3;
+    transform-style: preserve-3d;
+   animation:spin 5s linear infinite;
+
+}
+.venus{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: 0px;
+    animation:spin-planets 5s linear infinite;
+   transform:rotateX(90deg);
+}
+.earth-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 550px;
+    height: 550px;
+    top: 35%;
+    left:32%;
+    margin-top: 0px;
+    margin-left:0px;
+    border-radius: 50%;
+    z-index: 4;
+    animation:spin 20s linear infinite;
+    transform-style: preserve-3d;
+    animation:spin 7s linear infinite;
+}
+
+.earth{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    animation:spin-planets 7s linear infinite;
+    transform-style: preserve-3d;
+    transform:rotateX(90deg);
+}
+.moon-orbit{
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border:1px solid red;
+    top: 55%;
+    left: 20px;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 50%;
+    z-index: 4;
+
+    animation:spin 8s linear infinite;
+   transform-style: preserve-3d;
+}
+.moon{
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    margin-top: -15%;
+   
+    animation:spin-planets 8s linear infinite;
+    transform:rotateX(90deg);
+}
+.mars-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 720px;
+    height: 720px;
+    top: 25%;
+    left: 28%;
+    margin-top: 0px;
+    margin-left:-0px;
+    border-radius: 50%;
+    z-index: 5;
+
+    transform:rotateX(90deg);
+    animation:spin 10s linear infinite;
+   transform-style: preserve-3d;
+}
+
+.mars{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: -0px;
+    animation:spin-planets 10s linear infinite;
+    transform:rotateX(90deg);
+}
+.jupiter-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 850px;
+    height: 850px;
+    top: 22%;
+    left: 24%;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 50%;
+    z-index: 6;
+   animation:spin 12s linear infinite;
+   transform-style: preserve-3d;
+ 
+}
+
+.jupiter{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: -50px;
+   
+   transform:rotateX(90deg);
+   animation:spin-planets 12s linear infinite;
+   transform-style: preserve-3d;
+   
+}
+#jupiter-img{
+    width: 50px;
+    height:50px;
+}
+
+.saturn-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 1000px;
+    height: 1000px;
+    top: 20%;
+    left: 18%;
+    z-index: 7;
+  
+    border-radius: 50%;
+    animation:spin 15s linear infinite;
+    transform-style: preserve-3d;
+    animation:spin 15s linear infinite;
+
+}
+.saturn{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+
+    animation:spin-planets 15s linear infinite;
+    transform:rotateX(90deg);
+}
+#saturn-img{
+    width: 60px;
+    height:60px;
+    z-index: 8;
+
+}
+
+.second-ring{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    border:10px solid  #993300;
+    border-radius: 50%;
+    top: 47%;
+    left:-27px;
+    z-index: 8;
+}
+.uranus-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 1200px;
+    height: 1200px;
+    top: 15%;
+    left: 10%;
+    margin-top: -15px;
+    margin-left:0px;
+    border-radius: 50%;
+    z-index: 8;
+    animation:spin 17s linear infinite;
+    
+  
+  /*  animation:spin 30s linear infinite;*/
+  transform-style: preserve-3d;
+}
+
+
+.uranus{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-left:-14;
+    margin-top: -50px;
+   transform:rotateX(90deg);
+   animation:spin-planets 17s linear infinite;
+   z-index: 8;
+
+}
+#uranus-img{
+    width: 60px;
+    height:60px;
+}
+
+.neptune-orbit{
+    position: absolute;
+    border:1px solid red;
+    width: 1400px;
+    height: 1400px;
+    top: 6%;
+    left: 2%;
+    margin-top: 0px;
+    margin-left:0px;
+    border-radius: 50%;
+    z-index: 9;
+
+  animation:spin 20s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.neptune{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: -50px;
+    animation:spin-planets 20s linear infinite;
+    z-index: 9;
+}
+/*animations*/
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        transition-property: transform;
+    }
+    100%{
+        transform: rotate(360deg);
+        transition-property: transform;
+    }
+}
+@keyframes spin-planets{
+    0%{
+         transform: rotate(0deg) rotateX(90deg);
+         transition-property: transform;
+    }
+    100%{
+        transform: rotate(-360deg) rotateX(90deg);
+        transition-property: transform;
+      
+    }
+}
+@keyframes stars-pulse{
+   from{opacity: 1;} 
+   to {opacity: 0.2;}
+}
+
